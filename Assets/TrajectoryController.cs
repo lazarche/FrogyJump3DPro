@@ -35,7 +35,7 @@ public class TrajectoryController : MonoBehaviour
 
     private void HideTrajectory(bool hide)
     {
-        //line.enabled = !hide;
+        line.enabled = !hide;
     }
     private void RenderArc()
     {

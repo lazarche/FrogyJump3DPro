@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class ChildCollisionScript : MonoBehaviour
 {
-    bool collision = false;
+    GameObject collision = null;
 
     void OnTriggerEnter2D(Collider2D col)
     {
        if(col.gameObject.tag.Equals("Wall"))
-        collision = true;
+            collision = col.gameObject;
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
        if(col.gameObject.tag.Equals("Wall"))
-        collision = false;
+            collision = null;
     }
 
-    public bool getCollision() {
+    public GameObject getCollision() {
         return collision;
     }
 }

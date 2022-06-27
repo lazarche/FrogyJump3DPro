@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rig;
 
     GameObject ledge = null;
-    bool canGrab = true;
+    bool canGrab = true, dead = false;
 
     Vector3 target;
 
@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Mrtav je hihi
+        if (dead)
+            return;
+
+
         if(rig.velocity == new Vector2())
             SetAnimator(false);
             else
@@ -34,7 +39,6 @@ public class PlayerController : MonoBehaviour
 
         CheckForLaunch();
 
-        
     
         if(ledge == null && canGrab) {
             GameObject t = CheckLedge();
@@ -111,6 +115,19 @@ public class PlayerController : MonoBehaviour
             return null;
     }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        MoveCheckers();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Danger"))
+        {
+            dead = true;
+            Debug.Log("Dumro sam!" + collision.gameObject);
+        }
+    }
     private void MoveCheckers() {
         var temp =  ledgeCheck.transform.localPosition;
         var temp1 = ledgeWallCheck.transform.localPosition;
@@ -136,4 +153,6 @@ public class PlayerController : MonoBehaviour
     private void SetAnimator(bool inAir) { 
         ani.SetBool("inAir", inAir);
     }
+
+
 }

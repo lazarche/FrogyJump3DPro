@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     GameObject ledge = null;
     bool canGrab = true, dead = false;
 
+    public bool pass = false;
     Vector3 target;
 
     [SerializeField] float stronk = 6;
@@ -51,42 +52,25 @@ public class PlayerController : MonoBehaviour
 
         if(ledge) {
             transform.position = Vector3.Lerp(transform.position, target, 0.5f);
+            ani.SetBool("ledge", true);
             rig.velocity = new Vector3();
             CheckForLaunch();
+        } else {
+            ani.SetBool("ledge", false);
         }
+
+        
 
         dir = getInput() * stronk;
         tc.velocity = dir;
-        
-        // Stari penj
-        // if(!ledge)
-        // if(CheckLedge()) {
-        //     ledge = true;
-        //     target = ledgeWallCheck.transform.position + new Vector3(0,0.4f,0);
-        //     Debug.Log(target);
-        // }
-
-        // if(ledge) {
-        //     // rig.velocity = rig.velocity * 0;
-        //     // transform.position = Vector3.MoveTowards(transform.position, target, 15f * Time.deltaTime);
-        //     Vector3 dir = (this.transform.position - target).normalized;
-        //     rig.velocity = dir * -10f;
-        //     if(target.y > transform.position.y)
-        //         rig.velocity = rig.velocity + Vector2.up * 10;
-
-        //     Debug.DrawRay(transform.position, dir);
-
-        //     if(Vector3.Distance(transform.position, target) < 0.1f) {
-        //         ledge = false;
-        //         rig.velocity = rig.velocity * 0;
-        //     }
-                
-        // }
             
     }
 
     void ResetGrab() {
         canGrab = true;
+    }
+    void ResetPass() {
+        pass = false;
     }
 
     private void CheckForLaunch() {
@@ -102,6 +86,8 @@ public class PlayerController : MonoBehaviour
 
     private void LaunchFrog()
     {
+        pass = true;
+        Invoke("ResetPass", 1f);
         rig.velocity = dir;
         MoveCheckers();
     }
@@ -151,7 +137,10 @@ public class PlayerController : MonoBehaviour
     }
 
     private void SetAnimator(bool inAir) { 
-        ani.SetBool("inAir", inAir);
+        if(ledge)
+            ani.SetBool("inAir", true);
+            else
+            ani.SetBool("inAir", inAir);
     }
 
 

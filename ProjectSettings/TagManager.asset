@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Danger
+  - Bound
   layers:
   - Default
   - TransparentFX

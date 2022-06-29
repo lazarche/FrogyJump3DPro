@@ -100,12 +100,36 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2118075049596204401, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2118075049596204401, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
       propertyPath: m_Name
       value: StartWall
       objectReference: {fileID: 0}
     - target: {fileID: 2428388946330192474, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306514614621291482, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306514614621291482, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077352804447584335, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077352804447584335, guid: 838b3bd5d4cc4bd469256367ec8ae954, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -181,6 +205,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0971d5e96cd1fa149bf8361030ac042c, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1214074520503091774, guid: 0971d5e96cd1fa149bf8361030ac042c, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1214074520503091774, guid: 0971d5e96cd1fa149bf8361030ac042c, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0971d5e96cd1fa149bf8361030ac042c, type: 3}
       propertyPath: m_Name

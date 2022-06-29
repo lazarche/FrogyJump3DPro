@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        TinySauce.OnGameStarted("level:" + SceneManager.GetActiveScene().name);
     }
 
     public void StartTimer() {
@@ -19,11 +19,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoseGame() {
+        TinySauce.OnGameFinished(-1);
         btnRest.SetActive(true);
         active = false;
     }
 
     public void WinGame() {
+        TinySauce.OnGameFinished(time);
         btnCon.SetActive(true);
         active = false;
     }
@@ -49,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     public void NextScene() {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (SceneManager.sceneCount > nextSceneIndex)
+        if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
         {
             SceneManager.LoadScene(nextSceneIndex);
         } else 

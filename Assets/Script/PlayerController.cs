@@ -11,9 +11,11 @@ public class PlayerController : MonoBehaviour
     GameObject ledge = null;
     bool canGrab = true, dead = false;
 
+
     public bool pass = false;
     Vector3 target;
 
+    [SerializeField] Vector3 ledgeFix = new Vector3(0.4f, 1.9f, 0);
     [SerializeField] float stronk = 6;
     [SerializeField] GameObject joystick, ledgeCheck, ledgeWallCheck, model;
     [SerializeField] Animator ani;
@@ -45,8 +47,7 @@ public class PlayerController : MonoBehaviour
             GameObject t = CheckLedge();
             if(t != null) {
                 ledge = t;
-                float fix = (transform.localScale.y - t.transform.localScale.y) /2;
-                target = new Vector3(transform.position.x, ledge.transform.position.y, transform.position.z) - new Vector3(0,fix,0);
+                target = new Vector3(transform.position.x, ledge.transform.position.y, transform.position.z) - new Vector3(ledgeFix.x * -MoveCheckers(), ledgeFix.y, ledgeFix.z);
             }
         }
 
@@ -111,10 +112,14 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag.Equals("Danger"))
         {
             dead = true;
+            ani.SetBool("dead", true);
+            GameObject.Find("GameManager").GetComponent<GameManager>().LoseGame();
             Debug.Log("Dumro sam!" + collision.gameObject);
         }
+
+
     }
-    private void MoveCheckers() {
+    private float MoveCheckers() {
         var temp =  ledgeCheck.transform.localPosition;
         var temp1 = ledgeWallCheck.transform.localPosition;
         if(Mathf.Sign(temp.x) != Mathf.Sign(rig.velocity.x)) {
@@ -129,6 +134,8 @@ public class PlayerController : MonoBehaviour
             
         ledgeWallCheck.transform.localPosition = temp1;
         ledgeCheck.transform.localPosition = temp;
+
+        return Mathf.Sign(temp.x);
     }
 
     private Vector2 getInput()

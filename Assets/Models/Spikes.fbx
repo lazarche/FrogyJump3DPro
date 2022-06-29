@@ -8,11 +8,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2022
 		Month: 6
-		Day: 28
-		Hour: 10
-		Minute: 25
-		Second: 51
-		Millisecond: 702
+		Day: 27
+		Hour: 22
+		Minute: 28
+		Second: 17
+		Millisecond: 982
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.1.1"
 	OtherFlags:  {
@@ -31,21 +31,21 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "D:\TummyGames\NinjaSpecial3D\Spikes.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "D:\TummyGames\NinjaSpecial3D\Spikes.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Work\3D_Models\Maya\Voodoo\NinjaJump\Spikes.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Work\3D_Models\Maya\Voodoo\NinjaJump\Spikes.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "202004"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "28/06/2022 08:25:51.699"
-			P: "Original|FileName", "KString", "", "", "D:\TummyGames\NinjaSpecial3D\Spikes.fbx"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "27/06/2022 20:28:17.982"
+			P: "Original|FileName", "KString", "", "", "C:\Work\3D_Models\Maya\Voodoo\NinjaJump\Spikes.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "202004"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/06/2022 08:25:51.699"
-			P: "Original|ApplicationActiveProject", "KString", "", "", "D:\TummyGames\NinjaSpecial3D"
-			P: "Original|ApplicationNativeFile", "KString", "", "", "D:\TummyGames\NinjaSpecial3D\NinjaModel.mb"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "27/06/2022 20:28:17.982"
+			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Work\3D_Models\Maya\Voodoo\NinjaJump"
+			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Work\3D_Models\Maya\Voodoo\NinjaModel.mb"
 		}
 	}
 }
@@ -63,7 +63,7 @@ GlobalSettings:  {
 		P: "UnitScaleFactor", "double", "Number", "",1
 		P: "OriginalUnitScaleFactor", "double", "Number", "",1
 		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
-		P: "DefaultCamera", "KString", "", "", "Producer Front"
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
 		P: "TimeMode", "enum", "", "",6
 		P: "TimeProtocol", "enum", "", "",2
 		P: "SnapOnFrameMode", "enum", "", "",0
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1665103954576, "", "Scene" {
+	Document: 2257149543536, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -253,7 +253,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 1665146067104, "Geometry::", "Mesh" {
+	Geometry: 2257135005488, "Geometry::", "Mesh" {
 		Vertices: *60 {
 			a: -2,0,0.5,2,0,0.5,-2,0.5,0.5,2,0.5,0.5,-2,0.5,-0.5,2,0.5,-0.5,-2,0,-0.5,2,0,-0.5,-1.84641027450562,0.448419332504272,0.19999997317791,-1.15358984470367,0.448419332504272,0.200000032782555,-1.5,0.448419332504272,-0.400000005960464,-1.5,1.44841933250427,1.19209291327138e-08,-0.34641021490097,0.448419332504272,0.19999997317791,0.346410155296326,0.448419332504272,0.200000032782555,0,0.448419332504272,-0.400000005960464,-1.78813941431599e-08,1.44841933250427,1.19209291327138e-08,1.15358972549438,0.448419332504272,0.19999997317791,1.84641015529633,0.448419332504272,0.200000032782555,1.5,0.448419332504272,-0.400000005960464,1.5,1.44841933250427,1.19209291327138e-08
 		} 
@@ -313,11 +313,11 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1665196303536, "Model::Spikes", "Mesh" {
+	Model: 2257152521392, "Model::Spikes", "Mesh" {
 		Version: 232
 		Properties70:  {
-			P: "RotationPivot", "Vector3D", "Vector", "",0,1.45279971271728e-05,0
-			P: "ScalingPivot", "Vector3D", "Vector", "",0,1.45279971271728e-05,0
+			P: "RotationPivot", "Vector3D", "Vector", "",0,0.72420967173895,0
+			P: "ScalingPivot", "Vector3D", "Vector", "",0,0.72420967173895,0
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -327,7 +327,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 1664958990528, "Material::EnemyMaterial", "" {
+	Material: 2257085255392, "Material::EnemyMaterial", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -342,7 +342,7 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	AnimationStack: 1665145441136, "AnimStack::Take 001", "" {
+	AnimationStack: 2258693400000, "AnimStack::Take 001", "" {
 		Properties70:  {
 			P: "LocalStart", "KTime", "Time", "",1539538600
 			P: "LocalStop", "KTime", "Time", "",44646619400
@@ -350,7 +350,7 @@ Objects:  {
 			P: "ReferenceStop", "KTime", "Time", "",44646619400
 		}
 	}
-	AnimationLayer: 1664973075392, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 2257120105216, "AnimLayer::BaseLayer", "" {
 	}
 }
 
@@ -360,16 +360,16 @@ Objects:  {
 Connections:  {
 	
 	;Model::Spikes, Model::RootNode
-	C: "OO",1665196303536,0
+	C: "OO",2257152521392,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1664973075392,1665145441136
+	C: "OO",2257120105216,2258693400000
 	
 	;Geometry::, Model::Spikes
-	C: "OO",1665146067104,1665196303536
+	C: "OO",2257135005488,2257152521392
 	
 	;Material::EnemyMaterial, Model::Spikes
-	C: "OO",1664958990528,1665196303536
+	C: "OO",2257085255392,2257152521392
 }
 ;Takes section
 ;----------------------------------------------------

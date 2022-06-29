@@ -9,10 +9,10 @@ FBXHeaderExtension:  {
 		Year: 2022
 		Month: 6
 		Day: 28
-		Hour: 11
-		Minute: 46
-		Second: 55
-		Millisecond: 280
+		Hour: 10
+		Minute: 53
+		Second: 1
+		Millisecond: 63
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.1.1"
 	OtherFlags:  {
@@ -37,13 +37,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "202004"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "28/06/2022 09:46:55.278"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "28/06/2022 08:53:01.061"
 			P: "Original|FileName", "KString", "", "", "D:\TummyGames\NinjaSpecial3D\WeaponDispenser.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "202004"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/06/2022 09:46:55.278"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/06/2022 08:53:01.061"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "D:\TummyGames\NinjaSpecial3D"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "D:\TummyGames\NinjaSpecial3D\NinjaModel.mb"
 		}
@@ -63,7 +63,7 @@ GlobalSettings:  {
 		P: "UnitScaleFactor", "double", "Number", "",1
 		P: "OriginalUnitScaleFactor", "double", "Number", "",1
 		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
-		P: "DefaultCamera", "KString", "", "", "Producer Front"
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
 		P: "TimeMode", "enum", "", "",6
 		P: "TimeProtocol", "enum", "", "",2
 		P: "SnapOnFrameMode", "enum", "", "",0
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1664487593760, "", "Scene" {
+	Document: 1664487595552, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -253,7 +253,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 1665101596512, "Geometry::", "Mesh" {
+	Geometry: 1665103437568, "Geometry::", "Mesh" {
 		Vertices: *96 {
 			a: -0.40338796377182,-0.5,0.420241504907608,0.40338796377182,-0.5,0.420241504907608,-0.579548597335815,0.292273163795471,0.603762209415436,0.579548597335815,0.292273163795471,0.603762209415436,-0.579548597335815,0.292273163795471,-0.603762209415436,0.579548597335815,0.292273163795471,-0.603762209415436,-0.40338796377182,-0.5,-0.420241504907608,0.40338796377182,-0.5,-0.420241504907608,0,-0.5,0.5,0,-0.5,-0.5,0,0.292273163795471,-0.718351483345032,0,0.292273163795471,0.718351483345032,-0.718351244926453,0.292273163795471,0,0.718351244926453,0.292273163795471,0,0.500000238418579,-0.5,0,-0.500000238418579,-0.5,0,0.281383514404297,-0.5,0,0,-0.5,-0.281383484601974,0.227013558149338,-0.5,-0.236498102545738,-0.227013528347015,-0.5,-0.236498102545738,-0.281383514404297,-0.5,0,0,-0.5,0.281383484601974,0.227013558149338,-0.5,0.236498102545738,-0.227013558149338,-0.5,0.236498102545738,0.17594102025032,-0.285786151885986,0,0,-0.285786151885986,-0.17594102025032,0.141945064067841,-0.285786151885986,-0.147875547409058,-0.141945064067841,-0.285786151885986,-0.147875547409058,-0.17594102025032,-0.285786151885986,0,0,-0.285786151885986,0.17594102025032,0.141945064067841,-0.285786151885986,0.147875547409058,-0.141945064067841,-0.285786151885986,0.147875547409058
 		} 
@@ -315,18 +315,13 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1665093424272, "Model::WeaponDispenser1", "Mesh" {
+	Model: 1665266208800, "Model::WeaponDispenser1", "Mesh" {
 		Version: 232
 		Properties70:  {
-			P: "RotationOffset", "Vector3D", "Vector", "",7.19482880293823e-17,-1.17500471286048,0
-			P: "RotationPivot", "Vector3D", "Vector", "",-7.19482880293824e-17,0.587502356430242,0
-			P: "ScalingOffset", "Vector3D", "Vector", "",-3.59741440146912e-17,0.293751178215121,0
-			P: "ScalingPivot", "Vector3D", "Vector", "",-3.59741440146912e-17,0.293751178215121,0
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0.588666296197871,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,180
 			P: "Lcl Scaling", "Lcl Scaling", "", "A",2,2,2
 			P: "currentUVSet", "KString", "", "U", "map1"
@@ -334,7 +329,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 1665171008992, "Material::WeaponDispenser", "" {
+	Material: 1665170983792, "Material::WeaponDispenser", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -349,7 +344,7 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Material: 1665171008192, "Material::Black", "" {
+	Material: 1665170988192, "Material::Black", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -364,15 +359,15 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	AnimationStack: 1665277599712, "AnimStack::Take 001", "" {
+	AnimationStack: 1665265041472, "AnimStack::Take 001", "" {
 		Properties70:  {
-			P: "LocalStart", "KTime", "Time", "",153953860000
-			P: "LocalStop", "KTime", "Time", "",200140018000
-			P: "ReferenceStart", "KTime", "Time", "",153953860000
-			P: "ReferenceStop", "KTime", "Time", "",200140018000
+			P: "LocalStart", "KTime", "Time", "",1539538600
+			P: "LocalStop", "KTime", "Time", "",44646619400
+			P: "ReferenceStart", "KTime", "Time", "",1539538600
+			P: "ReferenceStop", "KTime", "Time", "",44646619400
 		}
 	}
-	AnimationLayer: 1664973104576, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 1664973092112, "AnimLayer::BaseLayer", "" {
 	}
 }
 
@@ -382,19 +377,19 @@ Objects:  {
 Connections:  {
 	
 	;Model::WeaponDispenser1, Model::RootNode
-	C: "OO",1665093424272,0
+	C: "OO",1665266208800,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1664973104576,1665277599712
+	C: "OO",1664973092112,1665265041472
 	
 	;Geometry::, Model::WeaponDispenser1
-	C: "OO",1665101596512,1665093424272
+	C: "OO",1665103437568,1665266208800
 	
 	;Material::WeaponDispenser, Model::WeaponDispenser1
-	C: "OO",1665171008992,1665093424272
+	C: "OO",1665170983792,1665266208800
 	
 	;Material::Black, Model::WeaponDispenser1
-	C: "OO",1665171008192,1665093424272
+	C: "OO",1665170988192,1665266208800
 }
 ;Takes section
 ;----------------------------------------------------
@@ -403,7 +398,7 @@ Takes:  {
 	Current: "Take 001"
 	Take: "Take 001" {
 		FileName: "Take_001.tak"
-		LocalTime: 153953860000,200140018000
-		ReferenceTime: 153953860000,200140018000
+		LocalTime: 1539538600,44646619400
+		ReferenceTime: 1539538600,44646619400
 	}
 }

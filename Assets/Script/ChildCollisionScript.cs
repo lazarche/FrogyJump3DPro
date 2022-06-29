@@ -8,13 +8,13 @@ public class ChildCollisionScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-       if(col.gameObject.tag.Equals("Wall"))
+       if(col.gameObject.tag.Equals("Pole"))
             collision = col.gameObject;
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
-       if(col.gameObject.tag.Equals("Wall"))
+       if(col.gameObject.tag.Equals("Pole"))
             collision = null;
     }
 

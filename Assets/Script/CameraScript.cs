@@ -20,8 +20,8 @@ public class CameraScript : MonoBehaviour
         if (vertical)
             yy = target.transform.position.y;
 
-        if (yy < 0)
-            yy = 0;
+        if (yy < 2)
+            yy = 2;
 
         if (horizontal)
             xx = target.transform.position.x;

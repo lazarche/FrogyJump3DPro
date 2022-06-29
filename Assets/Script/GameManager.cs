@@ -11,6 +11,18 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.autorotateToPortrait = true;
+        Screen.autorotateToLandscapeLeft = false;
+        Screen.autorotateToLandscapeRight = false;
+        Screen.autorotateToPortraitUpsideDown = false;
+        Application.targetFrameRate = 60;
+
+        float screenSize = Mathf.Abs(Camera.main.transform.position.x - Camera.main.orthographicSize * Screen.width / Screen.height) * 2;
+
+        Debug.Log(screenSize);
+
+        //Debug.Log(Camera.main.aspect);
+        //Camera.main.aspect = 0.5625f;
         TinySauce.OnGameStarted("level:" + SceneManager.GetActiveScene().name);
     }
 

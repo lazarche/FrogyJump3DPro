@@ -19,12 +19,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float stronk = 6;
     [SerializeField] GameObject joystick, ledgeCheck, ledgeWallCheck, model;
     [SerializeField] Animator ani;
+    [SerializeField] AudioSource uh;
     // Start is called before the first frame update
     void Start()
     {
         Application.targetFrameRate = 60;
         tc = GetComponent<TrajectoryController>();
         rig = GetComponent<Rigidbody2D>();
+        uh = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -87,6 +89,7 @@ public class PlayerController : MonoBehaviour
 
     private void LaunchFrog()
     {
+        uh.Play();
         pass = true;
         Invoke("ResetPass", 1f);
         rig.velocity = dir;

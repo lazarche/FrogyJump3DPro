@@ -28,10 +28,10 @@
     <activity android:name="com.facebook.unity.FBUnityGameRequestActivity" />
     <activity android:name="com.facebook.unity.FBUnityCreateGameGroupActivity" />
     <activity android:name="com.facebook.unity.FBUnityJoinGameGroupActivity" />
-    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb408905337837943" />
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb3178271352434382" />
     <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="true" />
     <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="true" />
-    <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider408905337837943" android:exported="true" />
+    <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider3178271352434382" android:exported="true" />
     <receiver android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:exported="true">
       <intent-filter>
         <action android:name="com.android.vending.INSTALL_REFERRER" />
